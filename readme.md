@@ -1,4 +1,4 @@
-#  Path randomizer for the Binding Of Isaac: Repentace - OBS overaly
+#  Path randomizer for the Binding Of Isaac: Repentace - OBS overlay
 
 This project is a plugin for OBS studios which allows you to generate a random objective(path) for each run and will display the path on screen so your viewers can stop asking you about the path.
 ## Features
