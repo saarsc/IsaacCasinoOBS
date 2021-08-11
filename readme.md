@@ -25,9 +25,11 @@ This project is a plugin for OBS studios which allows you to generate a random o
 
 ## Credits
 
- [Where I got the idea after Northernlion started to use it](https://trpgstuff.com/isaac/)
- [Took a lot of code from here](https://obsproject.com/forum/threads/tips-and-tricks-for-lua-scripts.132256/)
- [Images are taken from here](https://bindingofisaacrebirth.fandom.com/wiki/Binding_of_Isaac:_Rebirth_Wiki)
+ * [Where I got the idea after Northernlion started to use it](https://trpgstuff.com/isaac/)
+
+ * [Took a lot of code from here](https://obsproject.com/forum/threads/tips-and-tricks-for-lua-scripts.132256/)
+
+ * [Images are taken from here](https://bindingofisaacrebirth.fandom.com/wiki/Binding_of_Isaac:_Rebirth_Wiki)
 
 ### Disclaimer
 
