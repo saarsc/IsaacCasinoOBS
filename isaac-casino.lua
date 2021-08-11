@@ -133,15 +133,15 @@ function button()
     local xscale = obslua.obs_data_get_int(my_settings, "xscale")
     local yscale = obslua.obs_data_get_int(my_settings, "yscale")
 
-    local xoffset = 60 * xscale
+    local xoffset = 40 * xscale
     create_image("Imges\\Characters\\" .. char .. ".png", "Character", scene, xpos, ypos, xscale, yscale)
     xpos = xpos + xoffset
-    create_image("Imges\\arrow.png", "fArrow", scene, xpos, ypos, xscale, yscale)
+    create_image("Imges\\arrow.png", "fArrow", scene, xpos, ypos + 5, xscale, yscale)
     xpos = xpos + xoffset
     if (extra ~= "none") then
-        create_image("Imges\\Extras\\" .. extra .. ".png", "Extra", scene, xpos, ypos, xscale, yscale)
+        create_image("Imges\\Extras\\" .. extra .. ".png", "Extra", scene, xpos, ypos + 5, xscale, yscale)
         xpos = xpos + xoffset
-        create_image("Imges\\arrow.png", "sArrow", scene, xpos, ypos, xscale, yscale)
+        create_image("Imges\\arrow.png", "sArrow", scene, xpos, ypos + 5, xscale, yscale)
         xpos = xpos + xoffset
     else
         local image_source = obs.obs_scene_find_source(scene, "sArrow")
@@ -149,7 +149,7 @@ function button()
         image_source = obs.obs_scene_find_source(scene, "Extra")
         obs.obs_sceneitem_remove(image_source)
     end
-    create_image("Imges\\Bosses\\" .. boss .. ".png", "Boss", scene, xpos, ypos, xscale, yscale)
+    create_image("Imges\\Bosses\\" .. boss .. ".png", "Boss", scene, xpos, ypos + 5, xscale, yscale)
 
 end
 -- Show all properties
@@ -185,9 +185,9 @@ function script_properties()
 
     -- Base props
     obslua.obs_properties_add_float(properties, "xpos", "X location start", 0, 4000, 10)
-    obslua.obs_properties_add_float(properties, "ypos", "X location start", 0, 4000, 10)
-    obslua.obs_properties_add_float(properties, "xscale", "x size", 0, 100, 10)
-    obslua.obs_properties_add_float(properties, "yscale", "y size", 0, 100, 10)
+    obslua.obs_properties_add_float(properties, "ypos", "Y location start", 0, 4000, 10)
+    obslua.obs_properties_add_float(properties, "xscale", "x size", 1.5, 100, 10)
+    obslua.obs_properties_add_float(properties, "yscale", "y size", 1.5, 100, 10)
     obslua.obs_hotkey_register_frontend("isaaccasinonewrun", "Generates a new Isaac path", button)
     local button = obs.obs_properties_add_button(properties, "generate_run", "Generate Run", button)
     return properties
