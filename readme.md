@@ -1,4 +1,4 @@
-#  Path randomizer for the Binding Of Isaac: Repentace - OBS overaly
+#  Path randomizer for the Binding Of Isaac: Repentance - OBS overlay
 
 This project is a plugin for OBS studios which allows you to generate a random objective(path) for each run and will display the path on screen so your viewers can stop asking you about the path.
 ## Features
@@ -15,7 +15,7 @@ This project is a plugin for OBS studios which allows you to generate a random o
 2) Edit the % for each thing as you choose(0 disabels it)
 3) At the bottom of the settings you can edit the X, Y positions of where the overlay will be disaplyed, and below that the size of each image(scaler)
 4) **OPTIONAL** to set a hotkey: File -> Settings -> Hotkeys-> search for Isaac -> Edit the hot key for "Generates a new Isaac path"
- 5) **OPTIONAL** to add any new thing (boss, something in the middle, character) just add an image of it to the relevent folder in the Images folder and reload the script
+5) **OPTIONAL** to add any new thing (boss, something in the middle, character) just add an image of it to the relevent folder in the Images folder and reload the script
  ## Credits
  [Where I got the idea after Northernlion started to use it](https://trpgstuff.com/isaac/)
  [Took a lot of code from here](https://obsproject.com/forum/threads/tips-and-tricks-for-lua-scripts.132256/)
