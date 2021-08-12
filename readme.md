@@ -9,6 +9,10 @@ This project is a plugin for OBS studios which allows you to generate a random o
 * Allows for custom mods
 * Doesn't support greed / greeder
 
+## Screentshots
+![options image](options.png)
+
+![preview image](overlay.png)
 ## Installation
 
 1) Download this repo
