@@ -96,6 +96,7 @@ function button()
 
         if (fill and totalSum < 100) then
             chances["none"] = 100 - totalSum
+            totalSUm = 100
             table.sort(chances)
         end
 
